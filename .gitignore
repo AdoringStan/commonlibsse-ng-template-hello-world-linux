@@ -1,5 +1,13 @@
-.idea
-.vs
-.vscode/settings.json
-build
-cmake-build*
+# dot folders
+.cache/
+.idea/
+.vs/
+.vscode/
+
+# folders
+build/
+vs*/
+
+# files
+*.zip
+compile_commands.json
