@@ -3,8 +3,8 @@
 SKSEPluginInfo(
         .Version =
         {
-          @PROJECT_VERSION_MAJOR @, @PROJECT_VERSION_MINOR @,
-              @PROJECT_VERSION_PATCH @, 0
+            @PROJECT_VERSION_MAJOR@, @PROJECT_VERSION_MINOR@,
+              @PROJECT_VERSION_PATCH@, 0
         },
         .Name = "@PROJECT_NAME@", .Author = "@PLUGIN_AUTHOR@",
         .SupportEmail = "",

@@ -51,9 +51,9 @@ configure_file(
 	@ONLY
 )
 add_library(${PROJECT_NAME} SHARED
-	src/plugin.cpp
+	src/main.cpp
 	"${CMAKE_CURRENT_BINARY_DIR}/PluginInfo.cpp"
-) # <--- specifies plugin.cpp
+) # <--- specifies main.cpp
 target_link_libraries(${PROJECT_NAME} PRIVATE CommonLibSSE::CommonLibSSE)
 target_compile_definitions(${PROJECT_NAME} PRIVATE UNICODE _UNICODE)
 target_compile_options(${PROJECT_NAME}
