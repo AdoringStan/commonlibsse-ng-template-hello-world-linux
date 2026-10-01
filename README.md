@@ -3,7 +3,11 @@ Full disclosure: I smashed this template together with an unholy fusion of Bing,
 I used resources from the Linux cross-compiling in [alandtse/CommonLibSSE-NG](https://github.com/alandtse/CommonLibSSE-NG/blob/ng/examples/linux-cross-compile/README.md), [mrowrpurr's Logging SKSE Template](https://github.com/SkyrimScripting/SKSE_Template_Logging), and this [commonlibsse-ng-template](https://github.com/libxse/commonlibsse-ng-template). It's somehow working. Please God forgive me.
 
 ## Building
-You will first need to follow the one-time setup guide on the [Linux cross-compile readme](https://github.com/alandtse/CommonLibSSE-NG/blob/ng/examples/linux-cross-compile/README.md) in [alandtse/CommonLibSSE-NG](https://github.com/alandtse/CommonLibSSE-NG). After that, you should be able to run the build command in the project root:
+You will first need to follow the one-time setup guide on the [Linux cross-compile readme](https://github.com/alandtse/CommonLibSSE-NG/blob/ng/examples/linux-cross-compile/README.md) in [alandtse/CommonLibSSE-NG](https://github.com/alandtse/CommonLibSSE-NG).
+
+Don't forget to update the git submodules: `git submodule update --init --recursive`
+
+Finally, you should be able to run the build command in the project root:
 
 ```sh
 cmake --preset build-release-linux-clangcl-vcpkg-all
