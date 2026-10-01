@@ -1,10 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
   "name": "hello-world",
-  "version-semver": "10.0.0",
+  "version-semver": "1.0.0",
   "port-version": 0,
-  "description": "A fork of CommonLibSSE with advanced features for modern SKSE development.",
-  "homepage": "https://github.com/CharmedBaryon/CommonLibSSE",
+  "description": "A simple hellow world plugin for SKSE that builds on Linux.",
+  "homepage": "https://github.com/AdoringStan",
   "license": "GPL-3.0-or-later",
   "supports": "windows & x64",
   "builtin-baseline": "ee12231b20c95013c6638d845d04c91559a1d1ff",
@@ -60,8 +60,5 @@
         }
       ]
     }
-  },
-  "default-features": [
-    "tests"
-  ]
+  }
 }

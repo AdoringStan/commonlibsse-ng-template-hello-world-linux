@@ -67,7 +67,6 @@
       "hidden": true,
       "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "cacheVariables": {
-        "USE_VCPKG": "ON",
         "VCPKG_HOST_TRIPLET": "$env{PROJECT_ARCHITECTURE}-$env{PROJECT_PLATFORM}-static-md",
         "VCPKG_TARGET_TRIPLET": "$env{PROJECT_ARCHITECTURE}-$env{PROJECT_PLATFORM}-static-md"
       }
@@ -77,7 +76,6 @@
       "hidden": true,
       "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "cacheVariables": {
-        "USE_VCPKG": "ON",
         "VCPKG_TARGET_TRIPLET": "x64-windows-clangcl",
         "VCPKG_OVERLAY_TRIPLETS": "${sourceDir}/custom-triplets",
         "VCPKG_OVERLAY_PORTS": "${sourceDir}/custom-ports",
@@ -116,7 +114,6 @@
         "CMAKE_CXX_COMPILER": "clang++"
       },
       "environment": {
-        "PROJECT_COMPILER": "clang",
         "PROJECT_COMPILER_FLAGS": "-Wno-overloaded-virtual -Wno-delete-non-abstract-non-virtual-dtor -Wno-inconsistent-missing-override -Wno-reinterpret-base-class"
       },
       "vendor": {
@@ -131,8 +128,7 @@
       "name": "compiler-msvc",
       "hidden": true,
       "environment": {
-        "PROJECT_COMPILER_FLAGS": "/permissive- /Zc:preprocessor /EHsc /MP /W4 /WX /external:anglebrackets /external:W0 /bigobj",
-        "PROJECT_COMPILER": "msvc"
+        "PROJECT_COMPILER_FLAGS": "/permissive- /Zc:preprocessor /EHsc /MP /W4 /WX /external:anglebrackets /external:W0 /bigobj"
       }
     },
     {
@@ -160,7 +156,6 @@
       "name": "compiler-linux-clangcl",
       "hidden": true,
       "environment": {
-        "PROJECT_COMPILER": "clang-cl",
         "PROJECT_COMPILER_FLAGS": "/permissive- /EHsc /W4 /WX /bigobj -Wno-overloaded-virtual -Wno-delete-non-abstract-non-virtual-dtor -Wno-inconsistent-missing-override -Wno-reinterpret-base-class -Wno-nonportable-include-path -Wno-deprecated-copy-with-user-provided-copy -Wno-invalid-offsetof -Wno-switch -Wno-unused-command-line-argument -Wno-deprecated-volatile -Wno-unused-private-field"
       }
     },

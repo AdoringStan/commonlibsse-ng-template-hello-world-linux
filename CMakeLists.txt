@@ -55,7 +55,6 @@ add_library(${PROJECT_NAME} SHARED
 	"${CMAKE_CURRENT_BINARY_DIR}/PluginInfo.cpp"
 ) # <--- specifies main.cpp
 target_link_libraries(${PROJECT_NAME} PRIVATE CommonLibSSE::CommonLibSSE)
-target_compile_definitions(${PROJECT_NAME} PRIVATE UNICODE _UNICODE)
 target_compile_options(${PROJECT_NAME}
 	PRIVATE
 		-Wno-invalid-noreturn
